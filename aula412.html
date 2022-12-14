@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+
+function personFactory(name) {
+  let count = 0
+
+  return {
+    opa () => count++,
+    name: name,
+    type: 'person'
+  }
+}
+
+const tulio = personFactory('Tulio')
+
+const joao = personFactory('João')
+
+console.log(tulio.opa())
+
+console.log(tulio.opa())
+</script>
+
+</body>
+</html>
